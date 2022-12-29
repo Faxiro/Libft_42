@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tleroy <tleroy@student.42lyon.fr>          +#+  +:+       +#+         #
+#    By: faxiro <faxiro@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/11 17:50:15 by tleroy            #+#    #+#              #
-#    Updated: 2022/12/22 18:19:55 by tleroy           ###   ########lyon.fr    #
+#    Updated: 2022/12/24 17:55:45 by faxiro           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,7 @@ rm		:=	rm -rf
 ############	     RULES			############
 ################################################
 
-all:		$(NAME) bonus
+all:		$(NAME)
 
 %.o:		%.c $(HEAD) Makefile
 				$(CC) $(CFLAGS) -c $< -o $@
